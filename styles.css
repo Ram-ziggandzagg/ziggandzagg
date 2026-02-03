@@ -5,18 +5,19 @@
   padding: 0;
 }
 
+/* BASE */
 body {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-  background: #fff;
-  color: #111;
+  font-family: 'Lexend Deca', system-ui, sans-serif;
+  background: #000;
+  color: #fff;
   overflow: hidden;
 }
 
-/* INTRO */
+/* INTRO SCREEN */
 #intro {
   position: fixed;
   inset: 0;
-  background: #111;
+  background: #000;
   z-index: 10;
 }
 
@@ -28,30 +29,35 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: #fff;
+  gap: 2.5rem;
 }
 
-.brand-name {
-  font-size: 3rem;
-  letter-spacing: 0.05em;
-  margin-bottom: 1.5rem;
+/* LOGO */
+.logo {
+  width: 60%;
+  max-width: 260px;
+  height: auto;
 }
 
+/* ENTER BUTTON */
 #enterBtn {
-  padding: 0.75rem 2rem;
-  font-size: 1rem;
+  background: none;
   border: none;
+  color: #fff;
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 0.28em;
   cursor: pointer;
-  background: #fff;
-  color: #111;
-  transition: transform 0.2s ease;
+  transition: opacity 0.2s ease, transform 0.2s ease;
 }
 
 #enterBtn:hover {
-  transform: scale(1.05);
+  opacity: 0.7;
+  transform: translateY(-2px);
 }
 
-/* DOORS */
+/* DOOR PANELS */
 .door {
   position: absolute;
   top: 0;
@@ -81,28 +87,5 @@ body {
 /* MAIN SITE */
 #site {
   display: none;
-  padding: 4rem 2rem;
+  padding: 4rem;
 }
-
-.hero {
-  text-align: center;
-  margin-bottom: 4rem;
-}
-
-.hero h1 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-}
-
-.products {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 2rem;
-}
-
-.product-card {
-  padding: 3rem 2rem;
-  border: 1px solid #ddd;
-  text-align: center;
-}
-
