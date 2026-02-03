@@ -44,11 +44,24 @@ body {
   width: 80vw;
   max-width: 900px;
   min-width: 320px;
+  max-height: 55vh;
   height: auto;
+  position: relative;
+  z-index: 20;
 }
 
-  .enter-wrapper {
+.enter-wrapper {
   margin-top: -2.5rem;
+  position: relative;
+  z-index: 25;
+}
+
+#enterBtn {
+  outline: 2px dashed rgba(255,255,255,0.6);
+}
+
+#enterBtn {
+  color: #fff;
 }
 
 /* ENTER BUTTON */
